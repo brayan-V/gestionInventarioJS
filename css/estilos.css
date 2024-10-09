@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 20px;
+    background-color: #e7f3ff;
+}
+header {
+    padding: 20px;
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+h2 {
+    color: #085baf;
+    margin-bottom: 10px;
+}
+.seccion-formulario {
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.etiqueta {
+    display: block;
+    margin: 10px 0 5px;
+}
+.campo-texto, .campo-numero {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+}
+.boton {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.boton:hover {
+    background-color: #0056b3;
+}
+.lista-productos {
+    margin-top: 20px;
+}
+.lista-productos ul {
+    padding: 0;
+    width: 100%;
+}
+.lista-productos ul li {
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.boton-eliminar {
+    margin-top: 10px;
+    display: block;
+    background-color: #dc3545;
+}
+.boton-eliminar:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inventario de la Tienda</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Gestión de Inventario de la Tienda</h1>
+        </header>
+        <main>
+            <section class="seccion-formulario">
+                <h2>Agregar Producto</h2>
+                <form id="formAgregar">
+                    <label for="nombreProducto" class="etiqueta">Nombre del Producto:</label>
+                    <input type="text" id="nombreProducto" class="campo-texto" required>
+                    <label for="cantidadProducto" class="etiqueta">Cantidad:</label>
+                    <input type="number" id="cantidadProducto" class="campo-numero" required>
+                    <div class="contenedor-boton">
+                        <button type="submit" class="boton">Agregar Producto</button>
+                    </div>
+                </form>
+            </section>
+    
+            <section class="lista-productos">
+                <h2>Inventario</h2>
+                <div class="lista-productos">
+                    <ul id="listaProductos"></ul>
+                </div>
+            </section>
+    
+            <section class="seccion-formulario">
+                <h2>Actualizar Producto</h2>
+                <form id="formActualizar">
+                    <label for="nombreActualizar" class="etiqueta">Nombre del Producto:</label>
+                    <input type="text" id="nombreActualizar" class="campo-texto" required>
+                    <label for="nuevaCantidad" class="etiqueta">Nueva Cantidad:</label>
+                    <input type="number" id="nuevaCantidad" class="campo-numero" required>
+                    <div class="contenedor-boton">
+                        <button type="submit" class="boton">Actualizar Producto</button>
+                    </div>
+                </form>
+            </section>
+    
+            <section>
+                <form id="formEliminar">
+                    <label for="nombreEliminar" class="etiqueta">Nombre del Producto:</label>
+                    <input type="text" id="nombreEliminar" class="campo-texto" required>
+                    <div class="contenedor-boton">
+                        <button id="btnEliminar" class="boton boton-eliminar">Eliminar Producto</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+    </html>
